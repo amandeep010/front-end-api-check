@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    padding-top: 0;
     margin: 0;
     background-color: gray;
 }
@@ -16,6 +17,7 @@
 
 .search{
     float: right;
+    margin-top: 10px;
     color: white;
 }
 .link{

@@ -1,21 +1,21 @@
-import {Route,BrowserRouter,Routes} from 'react-router-dom'
-import HomeScreen from './Pages/HomeScreen'
+import {Route,BrowserRouter,Routes, Navigate, RouteProps} from 'react-router-dom'
 import FindData from './Pages/FindData'
 import Register from './Pages/Register'
-import Header from './Components/Header'
-import Services from './Pages/Services'
-import About from './Pages/About'
+import Login from './Pages/Login'
+
+const isAuthenticated=()=>{
+  const token = localStorage.getItem('token')
+  return !!token
+}
+
 
 function App() {
 
   return (
     <>
     <BrowserRouter>
-      <Header/> 
       <Routes>
-        <Route path='/' element={<HomeScreen/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/services' element={<Services/>}/>
+      <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/search' element={<FindData/>}/>
       </Routes>

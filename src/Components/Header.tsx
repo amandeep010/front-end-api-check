@@ -8,16 +8,10 @@ function Header() {
             <div className="header">
                 <ul >
                     <li>
-                        <Link to="/" className="link">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about" className="link">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/Services" className="link">Services</Link>
-                    </li>
-                    <li>
                         <Link to="/register" className="link">Register</Link>
+                    </li>
+                    <li>
+                        <Link to="/login" className="link">Login</Link>
                     </li>
                 </ul>
                 <div className="search">
